@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-
 """
 Runs Adult training with differential privacy.
 """
@@ -197,7 +194,7 @@ def main():
     
     """Loads ADULT a2a as in LIBSVM and preprocesses to combine training and validation data."""
     # https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html
-    x = pd.read_csv('data/adult.csv')
+    x = pd.read_csv('adult.csv')
     trainData, testData = train_test_split(x, test_size=0.1, random_state=218)
     # have to reset index, see https://discuss.pytorch.org/t/keyerror-when-enumerating-over-dataloader/54210/13
     trainData=trainData.reset_index()
