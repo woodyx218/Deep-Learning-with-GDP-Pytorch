@@ -13,6 +13,7 @@ pip install pytorch-dp
 ```
 
 ---------------- Update on 2021/4/28-----------------
+
 I write a [new notebook for tutorial](GDP_NN_tutorial.ipynb) of training deep neural network with Gaussian differential privacy. This works under the [Opacus](https://github.com/pytorch/opacus) package, which merged the old pytorch-dp.
 
 ## Two datasets:
