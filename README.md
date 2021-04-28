@@ -12,6 +12,9 @@ You need to install Pytorch privacy package [pytorch-dp](https://github.com/face
 pip install pytorch-dp
 ```
 
+---------------- Update on 2021/4/28-----------------
+I write a [new notebook for tutorial](GDP_NN_tutorial.ipynb) of training deep neural network with Gaussian differential privacy. This works under the [Opacus](https://github.com/pytorch/opacus) package, which merged the old pytorch-dp.
+
 ## Two datasets:
 [mnist.py](mnist.py): private CNN on MNIST
 
@@ -27,6 +30,8 @@ For example, if you run MNIST dataset (60,000 samples) for 15 epochs, batch size
 **By Moments Accountant:** 
 
 compute_epsilon(15,1.3,60000,256,1e-5)=1.1912
+
+%% this has been improved by Tensorflow-privacy using new Moments Accountant to epsilon = 0.9545.
 
 **By GDP CLT (Uniform subsampling):** 
 
