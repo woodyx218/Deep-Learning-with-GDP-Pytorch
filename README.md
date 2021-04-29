@@ -48,3 +48,7 @@ compute_epsU(15,1.3,60000,256,1e-5)=1.0685
 **By GDP CLT (Poisson subsampling):** 
 
 compute_epsP(15,1.3,60000,256,1e-5)=0.8345
+
+
+For example, MNIST in Figure 4 of our paper shows that our GDP CLT is both more accurate and more private then existing MA method.
+![mnist GDP](mnist_eps.png?raw=true)
