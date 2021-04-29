@@ -12,7 +12,7 @@ You need to install Pytorch privacy package [pytorch-dp](https://github.com/face
 pip install pytorch-dp
 ```
 
-However, for latest version of Pytorch privacy package, you should do
+However, for latest version of Pytorch privacy package [opacus](https://github.com/pytorch/opacus), you should do
 ```bash
 pip install opacus
 ```
@@ -21,7 +21,7 @@ pip install opacus
 
 ---------------- Update on 2021/4/28-----------------
 
-### I write a [new notebook for tutorial](GDP_NN_tutorial.ipynb) of training deep neural network with Gaussian differential privacy. This works under the [Opacus](https://github.com/pytorch/opacus) package, which merged the old pytorch-dp.
+### I write a [new notebook for tutorial](GDP_NN_tutorial.ipynb) of training deep neural network with Gaussian differential privacy. This works under the [Opacus](https://github.com/pytorch/opacus) package, which merged the old pytorch-dp and is different from Tensorflow Privacy package in many ways.
 
 ## Two datasets:
 [mnist.py](mnist.py): private CNN on MNIST
